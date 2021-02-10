@@ -75,6 +75,10 @@ header {
   margin-left: 24px;
 }
 
+.logo {
+  max-width: 88px;
+}
+
 .nav-link {
   display: inline-block;
   color: #959698;
