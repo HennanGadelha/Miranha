@@ -7,6 +7,13 @@
     font-family: "Mukta", sans-serif;
 }
 
+@mixin responsive() {
+    
+    @media screen and (max-width: 960px) {
+        @content;
+    }
+}
+
 @import "partials/colors";
 
 body {
@@ -36,6 +43,20 @@ p {
     color: $gray-3;
     letter-spacing: 1px;
     line-height: 140%;
+}
+
+.bx{
+    
+    @include responsive() {
+        display: block;
+    }
+    
+    width: 48px;
+    height: 48px;
+    background-color: $white-light;
+    border-radius: 8px;
+    display: none;  
+
 }
 
 @import "partials/layout";

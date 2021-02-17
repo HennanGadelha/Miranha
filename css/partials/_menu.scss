@@ -16,11 +16,17 @@ header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+
 }
 
 .nav-list{
     list-style: none;
     display: flex;
+
+    @include responsive(){
+        display: none;
+    }
 
     li{
         margin-left: 24px;
@@ -75,6 +81,11 @@ header{
 
 .nav-social{
     display: flex;
+
+    
+    @include responsive(){
+        display: none;
+    }
    
     svg{
         cursor: pointer;
